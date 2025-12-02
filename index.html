@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
     <title>Patch Arnold's Github Website</title>
+    <script>
+			
+			function changeBackgroundColor() {
+			    const colors = ['#ff9999', '#99ff99', '#9999ff', '#ffff99'];
+			    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+			    document.body.style.backgroundColor = randomColor;
+			}
+            <button onclick="changeBackgroundColor()">Change Background Color</button>
+            // Add this to your existing JavaScript
+            function playBackgroundMusic() {
+                var audio = new Audio('Get_Lucky.mp3');
+                audio.loop = true;
+                audio.play();
+            }
+
+            // Modify your window.onload function
+            window.onload = function() {
+                playBackgroundMusic();
+            };
+    </script>
     <style>
         body {
             font-family: Roboto;
